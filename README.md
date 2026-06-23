@@ -1,53 +1,40 @@
-<p align="center">
-  <img src="assets/banner.png" width="100%">
-</p>
-
-<br>
-
-<h1 align="center">UrbanFlow AI</h1>
-
-<br>
-
-<p align="center">
-  <img src="assets/demo.gif" width="95%">
-</p>
-
-<br>
 
 
-<p align="center">
+  
+
+
+# UrbanFlow_Prototype_demo
+
+  
+
+
+
+
+  
+
+
 The city should know before traffic happens.
-</p>
 
-<p align="center">
 AI-powered predictive traffic intelligence for modern cities.
-</p>
 
 ---
 
 ## Demo
 
-PASTE YOUR GITHUB VIDEO LINK HERE
+Watch the complete UrbanFlow AI demonstration here:
 
-Example:
-
-https://github.com/user-attachments/assets/YOUR_VIDEO_ID
+[UrbanFlow AI Demo Video](https://www.youtube.com/watch?v=9CBeCARttgE)
 
 ---
 
 ## Product Preview
 
-<p align="center">
-  <img src="assets/dashboard.png" width="48%">
-  <img src="assets/map.png" width="48%">
-</p>
 
-<br>insights
 
-<p align="center">
-  <img src="assets/analytics.png" width="48%">
-  <img src="assets/insights.png" width="48%">
-</p>
+  
+insights
+
+
 
 ---
 
@@ -113,6 +100,7 @@ Monitor traffic patterns and hotspot regions.
 
 # Why UrbanFlow AI
 
+
 | Conventional Systems | UrbanFlow AI           |
 | -------------------- | ---------------------- |
 | Reactive             | Predictive             |
@@ -121,13 +109,12 @@ Monitor traffic patterns and hotspot regions.
 | Present conditions   | Future forecasting     |
 | Delayed decisions    | Proactive intelligence |
 
+
 ---
 
 # Architecture
 
-<p align="center">
-  <img src="assets/architecture.png" width="90%">
-</p>
+
 
 ---
 
@@ -135,25 +122,25 @@ Monitor traffic patterns and hotspot regions.
 
 ### Frontend
 
-* Next.js
-* React
-* Tailwind CSS
-* Mapbox GL JS
-* Recharts
+- Next.js
+- React
+- Tailwind CSS
+- Mapbox GL JS
+- Recharts
 
 ### Backend
 
-* Flask
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
+- Flask
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
 
 ### Artificial Intelligence
 
-* Gemini API
-* Predictive Analytics
-* Traffic Intelligence Models
+- Gemini API
+- Predictive Analytics
+- Traffic Intelligence Models
 
 ---
 
@@ -261,16 +248,15 @@ Frontend will start at :
 http://localhost:3000
 ```
 
-
 # Future Directions
 
-* Live traffic APIs
-* IoT sensor integration
-* CCTV-based incident analysis
-* Smart traffic signal optimization
-* Reinforcement learning traffic control
-* Government traffic data integration
-* Mobile applications
+- Live traffic APIs
+- IoT sensor integration
+- CCTV-based incident analysis
+- Smart traffic signal optimization
+- Reinforcement learning traffic control
+- Government traffic data integration
+- Mobile applications
 
 ---
 
@@ -280,7 +266,6 @@ http://localhost:3000
 
 ### Aashlesh P
 
-
 ---
 
 # License
@@ -289,6 +274,4 @@ This project is intended for educational, research, and demonstration purposes.
 
 ---
 
-<p align="center">
 Built for intelligent and proactive urban mobility.
-</p>
