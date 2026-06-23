@@ -179,19 +179,6 @@ UrbanFlow-AI
 
 ---
 
-# Environment Variables
-
-Create a `.env` file and add the required credentials.
-
-```env
-GEMINI_API_KEY=your_api_key
-NEXT_PUBLIC_MAPBOX_TOKEN=your_mapbox_token
-```
-
-API credentials are not included for security reasons.
-
----
-
 # Quick Start
 
 Clone the repository.
@@ -341,11 +328,11 @@ http://localhost:3000
 
 ### Abhishek Anand
 
-AI Engineer & Full Stack Developer
+
 
 ### Aashlesh P
 
-System Design & Development
+
 
 ---
 
