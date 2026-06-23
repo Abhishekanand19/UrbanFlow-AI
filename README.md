@@ -1,46 +1,45 @@
+<p align="center">
+  <img src="assets/banner.png" width="100%">
+</p>
 
+<br>
 
-  
+<h1 align="center">UrbanFlow AI</h1>
 
-
-# UrbanFlow_Prototype_demo
-
-  
-
-
-
-
-  
-
-
+<p align="center">
 The city should know before traffic happens.
+</p>
 
+<p align="center">
 AI-powered predictive traffic intelligence for modern cities.
+</p>
 
----
+<br>
 
-## Demo
+<p align="center">
+  <img src="assets/demo.gif" width="95%">
+</p>
 
-Watch the complete UrbanFlow AI demonstration here:
+<br>
 
-[UrbanFlow AI Demo Video](https://www.youtube.com/watch?v=9CBeCARttgE)
+<p align="center">
+  <b>Complete Prototype Demonstration</b>
+</p>
 
----
-
-## Product Preview
-
-
-
-  
-insights
+<p align="center">
+  🎥 https://www.youtube.com/watch?v=9CBeCARttgE
+</p>
 
 
+<p align="center">
+Predict • Prevent • Prioritize
+</p>
 
 ---
 
 # UrbanFlow AI
 
-UrbanFlow AI is an intelligent traffic intelligence platform that predicts congestion, prioritizes emergency movement, and generates AI-driven traffic recommendations before congestion spreads.
+UrbanFlow AI is an intelligent traffic intelligence platform that predicts congestion, prioritizes emergency movement, and recommends proactive traffic actions before congestion spreads.
 
 Traditional systems answer:
 
@@ -50,23 +49,37 @@ UrbanFlow AI answers:
 
 > Where will traffic happen next?
 
-The platform combines predictive analytics, route intelligence, and AI-powered traffic reasoning to help cities become proactive instead of reactive.
+The platform combines predictive analytics, route intelligence, and traffic reasoning to help cities become proactive instead of reactive.
 
 ---
 
 # Vision
 
-Cities today react to congestion after it has already occurred.
+Modern cities react to traffic after congestion has already occurred.
 
-Traffic spreads.
+* Emergency vehicles lose valuable response time.
+* Traffic jams spread rapidly.
+* Road incidents create cascading congestion.
+* Operators receive delayed information.
+* Existing systems lack predictive intelligence.
 
-Emergency vehicles slow down.
+UrbanFlow AI aims to become an intelligent traffic layer capable of anticipating congestion, optimizing emergency movement, and assisting traffic operators with actionable insights.
 
-Road incidents escalate.
+---
 
-Decision-makers operate with delayed information.
+# Product Preview
 
-UrbanFlow AI aims to become a real-time traffic intelligence layer capable of anticipating congestion, optimizing emergency movement, and assisting traffic operators with AI-generated insights.
+<p align="center">
+  <img src="assets/dashboard.png" width="48%">
+  <img src="assets/map.png" width="48%">
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/analytics.png" width="48%">
+  <img src="assets/insights.png" width="48%">
+</p>
 
 ---
 
@@ -74,19 +87,19 @@ UrbanFlow AI aims to become a real-time traffic intelligence layer capable of an
 
 ### Traffic Prediction
 
-Analyze road conditions and estimate future congestion zones.
+Analyze traffic conditions and estimate future congestion zones.
 
 ### Emergency Intelligence
 
-Generate optimized emergency corridors.
+Generate optimized routes for emergency vehicles.
 
 ### Smart Diversion
 
-Recommend alternative routes to reduce congestion.
+Recommend alternate paths to reduce congestion spread.
 
-### AI Insights
+### Traffic Insights
 
-Gemini-powered explanations and traffic recommendations.
+Provide intelligent traffic recommendations.
 
 ### Interactive Mapping
 
@@ -100,21 +113,21 @@ Monitor traffic patterns and hotspot regions.
 
 # Why UrbanFlow AI
 
-
-| Conventional Systems | UrbanFlow AI           |
-| -------------------- | ---------------------- |
-| Reactive             | Predictive             |
-| Static navigation    | Intelligent routing    |
-| Manual analysis      | AI recommendations     |
-| Present conditions   | Future forecasting     |
-| Delayed decisions    | Proactive intelligence |
-
+| Conventional Systems | UrbanFlow AI                |
+| -------------------- | --------------------------- |
+| Reactive             | Predictive                  |
+| Static navigation    | Intelligent routing         |
+| Manual analysis      | Intelligent recommendations |
+| Present conditions   | Future forecasting          |
+| Delayed decisions    | Proactive intelligence      |
 
 ---
 
 # Architecture
 
-
+<p align="center">
+  <img src="assets/architecture.png" width="90%">
+</p>
 
 ---
 
@@ -122,25 +135,26 @@ Monitor traffic patterns and hotspot regions.
 
 ### Frontend
 
-- Next.js
-- React
-- Tailwind CSS
-- Mapbox GL JS
-- Recharts
+* Next.js
+* React
+* Tailwind CSS
+* Mapbox GL JS
+* Recharts
 
 ### Backend
 
-- Flask
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
+* FastAPI
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
 
-### Artificial Intelligence
+### Intelligence Layer
 
-- Gemini API
-- Predictive Analytics
-- Traffic Intelligence Models
+* Predictive Analytics
+* Traffic Analysis
+* Route Optimization
+* Event Analysis
 
 ---
 
@@ -151,6 +165,7 @@ UrbanFlow-AI
 │
 ├── assets/
 │   ├── banner.png
+│   ├── demo.gif
 │   ├── dashboard.png
 │   ├── map.png
 │   ├── analytics.png
@@ -161,6 +176,19 @@ UrbanFlow-AI
 ├── frontend/
 └── README.md
 ```
+
+---
+
+# Environment Variables
+
+Create a `.env` file and add the required credentials.
+
+```env
+GEMINI_API_KEY=your_api_key
+NEXT_PUBLIC_MAPBOX_TOKEN=your_mapbox_token
+```
+
+API credentials are not included for security reasons.
 
 ---
 
@@ -176,7 +204,18 @@ cd UrbanFlow-AI
 
 ---
 
-## Backend
+# Prerequisites
+
+* Python 3.10+
+* Node.js 18+
+* npm
+* Internet connection for map services
+
+---
+
+# Backend Setup
+
+Navigate to the backend directory.
 
 ```bash
 cd backend
@@ -184,19 +223,27 @@ cd backend
 python -m venv venv
 ```
 
-Windows:
+Activate the virtual environment.
+
+### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-Linux / macOS:
+### Linux / macOS
 
 ```bash
 source venv/bin/activate
 ```
 
-Run Fast Api backend Server:
+Install dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+Start the FastAPI server.
 
 ```bash
 uvicorn main:app --reload --port 8000
@@ -205,12 +252,12 @@ uvicorn main:app --reload --port 8000
 Backend:
 
 ```text
-http://localhost:5000
+http://localhost:8000
 ```
 
 ---
 
-## Frontend
+# Frontend Setup
 
 Open another terminal.
 
@@ -218,45 +265,75 @@ Open another terminal.
 cd frontend
 ```
 
-Install dependencies:
+Install dependencies.
 
 ```bash
 npm install
 ```
 
-then Install dependencies with legacy peer support:
+If dependency conflicts occur.
 
 ```bash
 npm install --legacy-peer-deps
 ```
 
-Install the required package:
+Install the required package.
 
 ```bash
 npm install canvg
 ```
 
-Start the development server:
+Start the development server.
 
 ```bash
 npx next dev
 ```
 
-Frontend will start at :
+Frontend:
 
 ```text
 http://localhost:3000
 ```
 
+---
+
+# Running UrbanFlow AI
+
+### Terminal 1
+
+```bash
+cd backend
+
+venv\Scripts\activate
+
+uvicorn main:app --reload --port 8000
+```
+
+### Terminal 2
+
+```bash
+cd frontend
+
+npx next dev
+```
+
+Open:
+
+```text
+http://localhost:3000
+```
+
+---
+
 # Future Directions
 
-- Live traffic APIs
-- IoT sensor integration
-- CCTV-based incident analysis
-- Smart traffic signal optimization
-- Reinforcement learning traffic control
-- Government traffic data integration
-- Mobile applications
+* Live traffic API integration
+* IoT sensor integration
+* CCTV-based incident analysis
+* Smart traffic signal optimization
+* Reinforcement learning traffic control
+* Government traffic data integration
+* Mobile applications
 
 ---
 
@@ -264,7 +341,11 @@ http://localhost:3000
 
 ### Abhishek Anand
 
+AI Engineer & Full Stack Developer
+
 ### Aashlesh P
+
+System Design & Development
 
 ---
 
@@ -274,4 +355,6 @@ This project is intended for educational, research, and demonstration purposes.
 
 ---
 
+<p align="center">
 Built for intelligent and proactive urban mobility.
+</p>
