@@ -1,99 +1,137 @@
-# 🚦 UrbanFlow AI
+<p align="center">
+  <img src="assets/banner.png" width="100%">
+</p>
 
-<div align="center">
+<br>
+
+<h1 align="center">UrbanFlow AI</h1>
+
+<br>
+
+<p align="center">
+  <img src="assets/demo.gif" width="95%">
+</p>
+
+<br>
+
+
+<p align="center">
+The city should know before traffic happens.
+</p>
+
+<p align="center">
+AI-powered predictive traffic intelligence for modern cities.
+</p>
+
+---
+
+## Demo
+
+PASTE YOUR GITHUB VIDEO LINK HERE
+
+Example:
+
+https://github.com/user-attachments/assets/YOUR_VIDEO_ID
+
+---
+
+## Product Preview
+
+<p align="center">
+  <img src="assets/dashboard.png" width="48%">
+  <img src="assets/map.png" width="48%">
+</p>
+
+<br>insights
+
+<p align="center">
+  <img src="assets/analytics.png" width="48%">
+  <img src="assets/insights.png" width="48%">
+</p>
+
+---
 
 # UrbanFlow AI
 
-### *"The city should know before traffic happens."*
+UrbanFlow AI is an intelligent traffic intelligence platform that predicts congestion, prioritizes emergency movement, and generates AI-driven traffic recommendations before congestion spreads.
 
-AI-powered predictive traffic intelligence platform for smarter cities.
+Traditional systems answer:
 
-![Next.js](https://img.shields.io/badge/Next.js-15-black)
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Flask](https://img.shields.io/badge/Flask-Backend-green)
-![Mapbox](https://img.shields.io/badge/Mapbox-Mapping-orange)
-![AI Powered](https://img.shields.io/badge/AI-Powered-purple)
+> Where is traffic right now?
 
-</div>
+UrbanFlow AI answers:
 
----
+> Where will traffic happen next?
 
-## 🌍 The Problem
-
-Modern cities react to traffic **after congestion occurs.**
-
-* Emergency vehicles get delayed.
-* Traffic jams spread rapidly.
-* Alternate routes are suggested too late.
-* Traffic control systems lack predictive intelligence.
-
-Cities need systems that can anticipate congestion before it happens.
+The platform combines predictive analytics, route intelligence, and AI-powered traffic reasoning to help cities become proactive instead of reactive.
 
 ---
 
-## 💡 Our Solution
+# Vision
 
-UrbanFlow AI is an AI-driven smart mobility platform that predicts congestion, analyzes incidents, and recommends intelligent traffic actions in real time.
+Cities today react to congestion after it has already occurred.
 
-Instead of asking:
+Traffic spreads.
 
-> "Where is traffic right now?"
+Emergency vehicles slow down.
 
-UrbanFlow AI asks:
+Road incidents escalate.
 
-> "Where will traffic happen next?"
+Decision-makers operate with delayed information.
+
+UrbanFlow AI aims to become a real-time traffic intelligence layer capable of anticipating congestion, optimizing emergency movement, and assisting traffic operators with AI-generated insights.
 
 ---
 
-## ✨ Key Features
+# Capabilities
 
-### 🚗 Traffic Congestion Prediction
+### Traffic Prediction
 
-AI models forecast future traffic conditions.
+Analyze road conditions and estimate future congestion zones.
 
-### 🚑 Emergency Route Intelligence
+### Emergency Intelligence
 
 Generate optimized emergency corridors.
 
-### 🛣 Smart Diversion Routes
+### Smart Diversion
 
-Suggest alternate paths to reduce congestion.
+Recommend alternative routes to reduce congestion.
 
-### 📍 Interactive Traffic Map
+### AI Insights
 
-Real-time visualization of roads and incidents.
+Gemini-powered explanations and traffic recommendations.
 
-### 📊 Analytics Dashboard
+### Interactive Mapping
 
-Monitor traffic trends and hotspot regions.
+Visualize incidents, congestion, routes, and traffic behavior.
 
-### ⚠ Incident Detection
+### Analytics
 
-Identify accidents, roadblocks, and disruptions.
-
-### 🤖 AI Traffic Insights
-
-Gemini-powered recommendations and explanations.
-
-### 🌆 Smart City Visualization
-
-A digital traffic command center experience.
+Monitor traffic patterns and hotspot regions.
 
 ---
 
-## 🖥 Demo Preview
+# Why UrbanFlow AI
 
-| Dashboard      | Traffic Map    |
-| -------------- | -------------- |
-|image.png       | image.png      |
-
-| Analytics      | AI Insights    |
-| -------------- | -------------- |
-| image.png      | image.png      |
+| Conventional Systems | UrbanFlow AI           |
+| -------------------- | ---------------------- |
+| Reactive             | Predictive             |
+| Static navigation    | Intelligent routing    |
+| Manual analysis      | AI recommendations     |
+| Present conditions   | Future forecasting     |
+| Delayed decisions    | Proactive intelligence |
 
 ---
 
-## 🏗 Tech Stack
+# Architecture
+
+<p align="center">
+  <img src="assets/architecture.png" width="90%">
+</p>
+
+---
+
+# Technology
 
 ### Frontend
 
@@ -111,40 +149,37 @@ A digital traffic command center experience.
 * NumPy
 * Scikit-learn
 
-### AI & Intelligence
+### Artificial Intelligence
 
 * Gemini API
 * Predictive Analytics
-* Traffic Incident Analysis
-* AI-based Route Recommendations
+* Traffic Intelligence Models
 
 ---
 
-## 📂 Project Structure
+# Project Structure
 
-```bash
-UrbanFlow-AI/
+```text
+UrbanFlow-AI
 │
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   ├── public/
-│   └── package.json
+├── assets/
+│   ├── banner.png
+│   ├── dashboard.png
+│   ├── map.png
+│   ├── analytics.png
+│   ├── insights.png
+│   └── architecture.png
 │
 ├── backend/
-│   ├── app.py
-│   ├── models/
-│   ├── data/
-│   └── requirements.txt
-│
+├── frontend/
 └── README.md
 ```
 
 ---
 
-# 🚀 Getting Started
+# Quick Start
 
-## Clone the Repository
+Clone the repository.
 
 ```bash
 git clone https://github.com/Abhishekanand19/UrbanFlow-AI.git
@@ -154,7 +189,7 @@ cd UrbanFlow-AI
 
 ---
 
-# ⚙ Backend Setup
+## Backend
 
 ```bash
 cd backend
@@ -162,28 +197,22 @@ cd backend
 python -m venv venv
 ```
 
-### Windows
+Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-### Linux / Mac
+Linux / macOS:
 
 ```bash
 source venv/bin/activate
 ```
 
-Install dependencies:
+Run Fast Api backend Server:
 
 ```bash
-pip install -r requirements.txt
-```
-
-Run the server:
-
-```bash
-python app.py
+uvicorn main:app --reload --port 8000
 ```
 
 Backend:
@@ -194,105 +223,72 @@ http://localhost:5000
 
 ---
 
-# 💻 Frontend Setup
+## Frontend
 
-Open a new terminal:
+Open another terminal.
 
 ```bash
 cd frontend
+```
 
+Install dependencies:
+
+```bash
 npm install
+```
 
+then Install dependencies with legacy peer support:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+Install the required package:
+
+```bash
+npm install canvg
+```
+
+Start the development server:
+
+```bash
 npx next dev
 ```
 
-Frontend:
+Frontend will start at :
 
 ```text
 http://localhost:3000
 ```
 
----
 
-# ▶ Running the Application
+# Future Directions
 
-### Terminal 1
-
-```bash
-cd backend
-venv\Scripts\activate
-python app.py
-```
-
-### Terminal 2
-
-```bash
-cd frontend
-npx next dev
-```
-
-Open:
-
-```text
-http://localhost:3000
-```
-
----
-
-# 🧠 How It Works
-
-1. Traffic incidents are collected.
-2. AI analyzes road conditions.
-3. Congestion risks are predicted.
-4. Alternate routes are generated.
-5. Emergency routes are prioritized.
-6. AI insights assist decision-makers.
-
----
-
-# 🎯 Impact
-
-✅ Reduced congestion
-
-✅ Faster emergency response
-
-✅ Improved commuter experience
-
-✅ Smarter traffic management
-
-✅ Better urban mobility planning
-
----
-
-# 🔮 Future Scope
-
-* Live IoT traffic sensor integration
-* CCTV-based incident detection
-* Reinforcement learning traffic control
-* Government traffic API integration
+* Live traffic APIs
+* IoT sensor integration
+* CCTV-based incident analysis
 * Smart traffic signal optimization
-* Mobile application support
+* Reinforcement learning traffic control
+* Government traffic data integration
+* Mobile applications
 
 ---
 
-# 👨‍💻 Team
+# Team
 
 ### Abhishek Anand
 
-Developer & AI Engineer
-
 ### Aashlesh P
 
-Developer & System Designer
 
 ---
 
-# 🏆 Hackathon Project
+# License
 
-Built for Smart City and AI Innovation Hackathons.
+This project is intended for educational, research, and demonstration purposes.
 
 ---
 
-# 📜 License
-
-This project is intended for educational, research, and hackathon purposes.
+<p align="center">
+Built for intelligent and proactive urban mobility.
+</p>
