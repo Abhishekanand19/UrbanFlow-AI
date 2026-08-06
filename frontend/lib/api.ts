@@ -1,4 +1,7 @@
-const BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+// Backend base URL. Set NEXT_PUBLIC_API_URL in Vercel (production) and in
+// frontend/.env.local (local dev). No hardcoded fallback so production never
+// silently points at a wrong/local host.
+const BASE = process.env.NEXT_PUBLIC_API_URL ?? "";
 
 export async function fetchKPI() {
   const r = await fetch(`${BASE}/api/kpi`);
