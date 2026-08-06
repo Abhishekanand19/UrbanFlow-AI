@@ -7,13 +7,25 @@ from similarity_engine import get_similar_incidents
 from scenario_engine import run_scenario
 from emergency_engine import get_emergency_corridor
 from ai_brief import generate_ai_brief
+import os
 import pandas as pd
 
 app = FastAPI(title="UrbanFlow AI API")
 
+# CORS: allow only the deployed frontend(s). Override via the
+# ALLOWED_ORIGINS env var (comma-separated) on Railway.
+DEFAULT_ORIGINS = "https://flipkart-urbanflow.vercel.app,http://localhost:3000"
+allowed_origins = [
+    o.strip()
+    for o in os.getenv("ALLOWED_ORIGINS", DEFAULT_ORIGINS).split(",")
+    if o.strip()
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,
+    # Also allow Vercel preview deployments (https://<branch>-<hash>.vercel.app)
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -23,6 +35,10 @@ df = load_and_clean()
 @app.get("/")
 def root():
     return {"status": "UrbanFlow AI running", "records": len(df)}
+
+@app.get("/health")
+def health():
+    return {"status": "ok", "records": len(df)}
 
 @app.get("/api/kpi")
 def kpi():
@@ -78,3 +94,8 @@ def corridors():
 @app.get("/api/hourly")
 def hourly():
     return get_hourly_pattern(df)
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", "8000"))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)

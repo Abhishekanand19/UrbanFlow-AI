@@ -1,9 +1,14 @@
+import os
 import pandas as pd
 import numpy as np
 from datetime import datetime
 
+# Resolve the data path relative to this file so it works regardless of the
+# process working directory (Railway may launch from the repo root).
+DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "incidents.csv")
+
 def load_and_clean():
-    df = pd.read_csv("data/incidents.csv")
+    df = pd.read_csv(DATA_PATH)
     
     # Parse datetime
     df['start_datetime'] = pd.to_datetime(df['start_datetime'], errors='coerce')
