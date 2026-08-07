@@ -5,6 +5,13 @@
 <br>
 
 <h1 align="center">UrbanFlow AI</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Next.js%2014-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <a href="https://www.youtube.com/watch?v=9CBeCARttgE"><img src="https://img.shields.io/badge/▶_Demo-FF0000?style=flat-square&logo=youtube&logoColor=white"/></a>
+</p>
 
 <p align="center">
 The city should know before traffic happens.
